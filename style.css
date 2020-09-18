@@ -11,6 +11,7 @@ header img {
     margin-left: 560px;
     margin-top: -140px;
     border-radius: 10px;
+    box-shadow: 2px 2px paleturquoise;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h1 {
     font-family: 'Iceland', cursive;
     border-radius: 10px;
     font-size: 60px;
+    text-shadow: 1px 1px turquoise;
 }
 
 h2 {
