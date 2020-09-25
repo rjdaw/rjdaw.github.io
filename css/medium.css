@@ -8,8 +8,7 @@
     }
 
     header img {
-        margin-left: 560px;
-        margin-top: -140px;
+        float: right;
         border-radius: 10px;
         box-shadow: 2px 2px paleturquoise;
     }

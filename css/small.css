@@ -2,30 +2,36 @@
 
 body {
     margin: auto;
-    width: 80%;
     max-width: 750px;
 }
 
 
-h1 {
+header {
     background-color: darkslategrey;
     color: papayawhip;
-    padding: 30px 0px 30px 100px;
     font-family: 'Iceland', cursive;
-    border-radius: 10px;
-    font-size: 40px;
+    font-size: 20px;
     text-shadow: 1px 1px turquoise;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 5px;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    width: 50%;
 }
 
 h2 {
+    text-align: center;
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
-    margin-top: -80px;
-    margin-left: 30px;
-    margin-right: 50px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    
+    border-bottom: 1px solid black;    
 }
 
 ul li {
@@ -55,7 +61,6 @@ footer {
     color: papayawhip;
     text-align: center;
     padding: 10px 0 10px 0;
-    border-radius: 10px;
     font-size: 16px;
 }
 
