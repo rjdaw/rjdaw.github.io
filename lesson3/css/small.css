@@ -44,9 +44,11 @@ li a:hover {
     color: black;
     padding: 7px;
     border-radius: 2px 2px 2px 2px;
-  }
+}
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
 }
 
@@ -54,12 +56,16 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     margin: 15px;
     padding: 10px;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
     font-family: 'Cabin Sketch', cursive;
 }
 
