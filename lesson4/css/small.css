@@ -1,108 +1,112 @@
-nav {
-    background-color: white;
-    border-radius: 5px;
-    margin: 0 50px 0 50px;
-    font-size: 20px;
+body {
+    background-color: #094d92;
 }
 
-nav ul {
+header {
+    background-color: white;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header img {
     display: block;
-    list-style: none;
+    float: left;
+    padding-left: 30px;
+}
+
+header h1, p {
+    text-align: center;
+    padding-right: 130px;
+}
+
+header p {
+    font-family: 'Oldenburg', cursive;
+    font-size: 14px;
+}
+
+header h1 {
+    padding-top: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bold;
+}
+
+#responsive-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 nav li {
-    padding: 20px 25px 20px 25px;
-}
-
-body {
-    background-color: #094d92;
+    text-align: center;
     font-family: 'Oldenburg', cursive;
 }
 
-img {
-    border-radius: 5px;
-}
-
-main {
-    background-color: white;
-    margin: 30px;
-    padding: 30px;
-    border-radius: 5px;
+nav button {
+    margin: .7rem .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
 }
 
 li a:link {
-    color: #0c7489;
-    text-decoration: none;
-}
-
-li a:visited {
+    display: block;
     color: #094d92;
-}
-
-li a:hover {
-    background-color: limegreen;
-    color: black;
-    padding: 7px;
-    border-radius: 2px 2px 2px 2px;
-}
-
-table,
-th,
-td {
-    border: 1px solid black;
-}
-
-table {
-    margin-top: 20px;
-}
-
-th,
-td {
-    margin: 15px;
+    text-decoration: none;
+    border-top: 1px solid #0c7489;
     padding: 10px;
 }
 
-h1,
-h2,
-h3,
-nav {
-    font-family: 'Cabin Sketch', cursive;
+li a:visited {
+    color: #0c7489;
 }
 
-.cabinsketch {
-    font-family: 'Cabin Sketch', cursive;
-}
-
-#limegreen {
-    background-color: limegreen;
-    color: white;
-}
-
-#black {
-    background-color: black;
-    color: white;
-}
-
-#white {
-    background-color: white;
+li a:hover {
+    background-color: #4bfa4b;
     color: black;
+    padding: 15px;
+    font-size: larger;
 }
 
-#yaleblue {
-    background-color: #094d92;
-    color: white;
+li:last-child a:hover {
+    border-radius: 0 0 5px 5px;
 }
 
-#tealblue {
-    background-color: #0c7489;
-    color: white;
+main {
+    text-align: center;
+    background-color: white;
+    font-family: 'Oldenburg', cursive;
+    margin: 10px;
+    border-radius: 5px;
+    padding: .5em 0 .5em;
+}
+
+main div {
+    border: 1px dashed #0c7489;
+    margin: 1.5em;
+    padding: .5em;
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 28px;
 }
 
 footer {
-    background-color: white;
-    font-size: 14px;
-    margin: 30px;
-    padding: 30px;
-    border-radius: 5px;
     text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
 }

@@ -2,4 +2,24 @@
     nav ul {
         display: flex;
     }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    li:first-child a:hover {
+        border-radius: 5px 0 0 5px;
+    }
+
+    li:last-child a:hover {
+        border-radius: 0 5px 5px 0;
+    }
 }
