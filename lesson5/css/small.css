@@ -132,6 +132,20 @@ main div {
     grid-column: 2/3;
 }
 
+table {
+    border-collapse: collapse;
+}
+  
+table, th, td {
+    padding: 10px;
+    border: 2px solid green;
+    font-size: 14px;
+}
+
+th {
+    background-color: rgb(194, 236, 194);
+}
+
 h2 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 28px;
