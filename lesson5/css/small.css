@@ -1,0 +1,145 @@
+body {
+    background-color: #094d92;
+}
+
+header {
+    background-color: white;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header img {
+    display: block;
+    float: left;
+    padding-left: 30px;
+}
+
+header h1, p {
+    text-align: center;
+    padding-right: 130px;
+}
+
+header p {
+    font-family: 'Oldenburg', cursive;
+    font-size: 14px;
+}
+
+header h1 {
+    padding-top: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bold;
+}
+
+#responsive-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+nav li {
+    text-align: center;
+    font-family: 'Oldenburg', cursive;
+}
+
+nav button {
+    margin: .7rem .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+
+li a:link {
+    display: block;
+    color: #094d92;
+    text-decoration: none;
+    border-top: 1px solid #0c7489;
+    padding: 10px;
+}
+
+li a:visited {
+    color: #0c7489;
+}
+
+li a:hover {
+    background-color: #4bfa4b;
+    color: black;
+    padding: 15px;
+    font-size: larger;
+}
+
+li:last-child a:hover {
+    border-radius: 0 0 5px 5px;
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    font-family: 'Oldenburg', cursive;
+    margin: 10px;
+    border-radius: 5px;
+    padding: .5em 0 .5em;
+}
+
+main div {
+    border: 1px dashed #0c7489;
+    margin: 1.5em;
+    padding: .5em;
+}
+
+.hero-div {
+    position: relative;
+}
+
+.hero-div img {
+    max-width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: radial-gradient(rgb(194, 236, 194), lightgreen, #4bfa4b);
+    display: grid;
+    grid-template-columns: 250px 250px;
+    border: 2px solid green;
+    font-size: 14px;
+}
+
+.weather-summary h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.labels {
+    grid-column: 1/2;
+}
+
+.values {
+    grid-column: 2/3;
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 28px;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
+}
