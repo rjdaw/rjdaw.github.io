@@ -107,6 +107,7 @@ main div {
 }
 
 .weather-summary {
+    width: 380px;
     position: absolute;
     top: 20px;
     left: 30px;
