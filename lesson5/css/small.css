@@ -120,6 +120,7 @@ main div {
     grid-template-columns: 110px 110px;
     border: 2px solid green;
     font-size: 14px;
+    opacity: .95;
 }
 
 .weather-summary h3 {
