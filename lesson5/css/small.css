@@ -97,12 +97,12 @@ main {
 }
 
 main div {
-    border: 1px dashed #0c7489;
     margin: 1.5em;
     padding: .5em;
 }
 
 .hero-div {
+    padding: 0px;
     position: relative;
 }
 
@@ -117,7 +117,7 @@ main div {
     left: 30px;
     background: radial-gradient(rgb(194, 236, 194), lightgreen, #4bfa4b);
     display: grid;
-    grid-template-columns: 110px 110px;
+    grid-template-columns: 1fr 1fr;
     border: 2px solid green;
     font-size: 14px;
     opacity: .95;
@@ -153,8 +153,13 @@ main div {
     text-align: left;
 }
 
+.forecast {
+    padding: 0px;
+}
+
 table {
     border-collapse: collapse;
+    width: 100%;
 }
   
 table, th, td {
@@ -165,6 +170,11 @@ table, th, td {
 
 th {
     background-color: rgb(194, 236, 194);
+}
+
+.article {
+    background-color: rgb(194, 236, 194);
+    border: 1px solid #0c7489;
 }
 
 .article img {
@@ -187,4 +197,9 @@ footer {
     margin: 10px;
     border-radius: 5px;
     padding: 8px;
+}
+
+.social img {
+    border-radius: 50px 50px 50px 50px;
+    padding: 3px;
 }
