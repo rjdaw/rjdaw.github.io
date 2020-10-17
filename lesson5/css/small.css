@@ -104,6 +104,7 @@ main div {
 .hero-div {
     padding: 0px;
     position: relative;
+    margin-bottom: 55px;
 }
 
 .hero-div img {
@@ -153,7 +154,7 @@ main div {
     text-align: left;
 }
 
-.forecast {
+#forecast {
     padding: 0px;
 }
 
@@ -199,7 +200,16 @@ footer {
     padding: 8px;
 }
 
+.contact p {
+    text-align: left;
+    padding-left: 9em;
+}
+
 .social img {
     border-radius: 50px 50px 50px 50px;
     padding: 3px;
+}
+
+.social {
+    margin-bottom: 15px;
 }
