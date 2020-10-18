@@ -182,6 +182,10 @@ th {
     max-width: 100%;
 }
 
+#author {
+    font-style: italic;
+}
+
 .article p {
     padding: 0px;
     font-size: 13px;
@@ -212,4 +216,8 @@ footer {
 
 .social {
     margin-bottom: 15px;
+}
+
+.copyright {
+    background-color: khaki;
 }
