@@ -2,6 +2,16 @@ body {
     background-color: #094d92;
 }
 
+#pancakes {
+    background-color: lightcyan;
+    border: 1px solid #0c7489;
+    font-family: 'Oldenburg', cursive;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
 header {
     background-color: white;
     padding-bottom: 10px;
