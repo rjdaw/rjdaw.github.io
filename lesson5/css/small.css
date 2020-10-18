@@ -214,8 +214,13 @@ footer {
     padding: 8px;
 }
 
+.contact h4 {
+    font-size: 24px;
+}
+
 .contact p {
     text-align: left;
+    font-size: 20px;
     padding-left: 9em;
 }
 
