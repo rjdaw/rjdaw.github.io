@@ -26,3 +26,30 @@ if (dayOfWeek == 5) {
 function toggleMenu () {
     document.getElementById("responsive-nav").classList.toggle("hide");
 }
+
+//progressive image load
+function preloadImage(img) {
+    src = img.getAttribute("data-src");
+    img.src = src;
+}
+images = document.querySelectorAll("[data-src]");
+
+imageOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 300px 0px"
+};
+
+imageObserver = new IntersectionObserver((entries, imageObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imageObserver.unobserve(entry.target);
+        }
+    })
+}, imageOptions)
+
+images.forEach(image => {
+    imageObserver.observe(image);
+})
