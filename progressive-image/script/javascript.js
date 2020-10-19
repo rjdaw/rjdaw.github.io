@@ -33,15 +33,15 @@ function preloadImage(img) {
     img.src = src;
 }
 
-images = document.querySelectorAll("[data-src]");
+const images = document.querySelectorAll("[data-src]");
 
 imageOptions = {
     threshold: 1,
-    rootMargin: "0px 0px 500px 0px"
+    rootMargin: "0px 0px 100px 0px"
 };
 
 imageObserver = new IntersectionObserver((entries, imageObserver) => {
-    entries.forEach(entries => {
+    entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         } else {
