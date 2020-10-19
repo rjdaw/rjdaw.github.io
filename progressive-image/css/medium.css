@@ -15,6 +15,10 @@
         display: none;
     }
 
+    .demo img {
+        max-width: 100%;
+    }
+
     .hide {
         display: flex;
     }
