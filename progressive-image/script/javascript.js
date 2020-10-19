@@ -27,4 +27,30 @@ function toggleMenu () {
     document.getElementById("responsive-nav").classList.toggle("hide");
 }
 
-//progressive image load
+//progressive image loading
+function preloadImage(img) {
+    src = img.getAttribute("data-src");
+    img.src = src;
+}
+
+images = document.querySelectorAll("[data-src]");
+
+imageOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 500px 0px"
+};
+
+imageObserver = new IntersectionObserver((entries, imageObserver) => {
+    entries.forEach(entries => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imageObserver.unobserve(entry.target);
+        }
+    })
+}, imageOptions)
+
+images.forEach(image => {
+    imageObserver.observe(image);
+})
