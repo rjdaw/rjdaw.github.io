@@ -1,4 +1,21 @@
+header, main {
+    margin-left: 50px;
+}
 
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+picture {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: 400px;
+}
 
 footer {
     font-size: 16px;
