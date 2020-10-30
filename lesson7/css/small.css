@@ -51,6 +51,10 @@ header h1 {
     display: none;
 }
 
+.large-appear {
+    display: none;
+}
+
 nav {
     background-color: white;
     text-align: center;
@@ -253,4 +257,8 @@ picture {
     grid-gap: 20px;
     grid-auto-rows: 400px;
     justify-content: center;
+}
+
+.gallery img {
+    border-radius: 5px;
 }
