@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ruben Dawagne">
+    <meta name="description"
+        content="WDD 230 - This page is the photo gallery for the Weather Forecast website.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Oldenburg&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>The Olive Leaf - Weather Gallery</title>
+</head>
+
+<body>
+    <header>
+        <div id="pancakes">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <a href="#"><img src="images/leaf.png" alt="Leaf Logo"></a>
+        <h1>The Olive Leaf</h1>
+        <p>So Noah knew and so do you</p>
+    </header>
+
+    <nav>
+        <button id="menu-button" onclick="toggleMenu()">&#9776;
+        </button>
+        <ul id="responsive-nav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="weather-gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gallery</h2>
+        <picture>
+            <img src="images/placeholder.png" data-src="images/nasa.jpg" alt="Bird in City">
+            <img src="images/placeholder.png" data-src="images/thunder.jpg" alt="Bird in City">
+            <img src="images/placeholder.png" data-src="images/umbrellas.jpg" alt="Bird in City">
+            <img src="images/placeholder.png" data-src="images/bird.jpg" alt="Bird in City">
+            <img src="images/placeholder.png" data-src="images/blacknwhite.jpg" alt="Black and White Sky">
+            <img src="images/placeholder.png" data-src="images/bus.jpg" alt="Bus in snow">
+            <img src="images/placeholder.png" data-src="images/clouds.jpg" alt="Nice clouds">
+            <img src="images/placeholder.png" data-src="images/pink.jpg" alt="Pink Sky">
+            <img src="images/placeholder.png" data-src="images/snow.jpg" alt="Snow">
+        </picture>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <img class="hide" src="images/preston-map.png" alt="Map">
+            <h4>The Olive Leaf</h4>
+            <p id="address">75, Sweet Climate Drive<br>
+                Preston, ID 83263</p>
+            <p>&#9743; 999.999.9999<br>
+                &#9993; theoliveleaf@tol.com
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsapp.png" alt="whatsapp icon" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+        <div class="copyright">
+            <section>&copy; <span id="currentYear"></span> | The Olive Leaf | Ruben Dawagne</section>
+            <section id="currentDate">
+                <script src="script/currentDate.js"></script>
+                <script src="script/currentYear.js"></script>
+                <script src="script/fridayPancakes.js"></script>
+                <script src="script/toggleMenu.js"></script>
+                <script src="script/windChill.js"></script>
+            </section>
+        </div>
+    </footer>
+    <script src="script/lazyload.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Cabin Sketch', 'Oldenburg'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
