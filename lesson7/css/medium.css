@@ -62,4 +62,8 @@
     li a:link {
         border-top: none;
     }
+
+    .active {
+        border-radius: 0 5px 5px 0;
+    }
 }
