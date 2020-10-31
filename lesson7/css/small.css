@@ -83,6 +83,10 @@ li a:link {
 }
 
 li a:visited {
+    color: #094d92;
+}
+
+footer a:visited {
     color: #0c7489;
 }
 
@@ -99,6 +103,10 @@ li:last-child a:hover {
 
 .active {
     background-color: #4bfa4b;
+}
+
+.active a:visited {
+    color: black;
 }
 
 main {
