@@ -53,8 +53,8 @@
     .contact img{
         float: left;
     }
-
-    figure {
+    
+    .gallery {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
