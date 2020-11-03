@@ -11,19 +11,19 @@ table, th, td {
     padding: 5px;
 }
 
-thead tr:first-child {
+thead {
     font-size: 30px;
     background-color: #7fb9c2;
 }
 
-thead tr:nth-child(2) {
+tbody tr th {
     font-size: 22px;
     background-color: #628ca6;
     color: white;
     font-weight: bold;
 }
 
-tbody tr:nth-child(4) td:last-child {
+tbody tr:nth-child(5) td:last-child {
     background-color: #628ca6;
     color: white;
 }
@@ -33,7 +33,7 @@ tfoot {
     background-color: #7fb9c2;
 }
 
-tbody tr:nth-child(5) td:first-child {
+#black-friday {
     font-style: italic;
 }
 
