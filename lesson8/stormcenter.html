@@ -39,45 +39,69 @@
     </nav>
     <main>
         <form>
-            <label for="fullname">Full name:</label>
+            <label for="fullname">Full name</label><br>
             <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]{5,}" required><br><br>
-            <label for="email">Email:</label>
-  <input type="email" id="email" name="email" placeholder="amazing@heavens.com"><br><br>
-  <label for="phone">Phone number:</label>
-  <input type="tel" id="phone" name="phone" required><br><br>
-            
-            <label for="zip">Zip code:</label>
-            <input id="zip" name="zip" type="number"><br><br>
-            <label for="stormdate">Storm date:</label>
-            <input type="date" id="start" name="stormdate"><br><br>
-            <label for="stormtype">Storm type:</label>
-<input list="storms" name="stormtype" id="stormtype">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="amazing@heavens.com"><br><br>
+            <label for="phone">Phone number</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
 
-<datalist id="storms">
-  <option value="Flash Flood">
-  <option value="Hail">
-  <option value="Hurricane">
-  <option value="Thunderstorm">
-  <option value="Tornado">
-</datalist><br><br>
-<label for="rating" class="slidecontainer">Storm severity:</label>
-    <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-    <span id="ratingvalue">5</span>
-    <datalist id="tickmarks">
-        <option value="0">
-        <option value="1">
-        <option value="2">
-        <option value="3">
-        <option value="4">
-        <option value="5">
-        <option value="6">
-        <option value="7">
-        <option value="8">
-        <option value="9">
-        <option value="10">
-    </datalist><br><br>
-  
-<input type="submit" value="Submit">
+            <label for="zip">Zip code</label> <br>
+            <input id="zip" name="zip" type="number"><br><br>
+            <label for="stormdate">Storm date</label><br>
+            <input type="date" id="start" name="stormdate"><br><br>
+            <label for="stormtype">Storm type</label> <br>
+            <input list="storms" name="stormtype" id="stormtype">
+
+            <datalist id="storms">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist><br><br>
+            <label for="rating" class="slidecontainer">Storm severity:</label>
+            <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1"
+                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span>
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist><br><br>
+
+            <label for="stormregion">Storm region:</label>
+            <select name="stormregion" id="stormregion">
+                <optgroup label="Select Region ...">
+                <option value="preston">Preston</option>
+                <option value="soda-springs">Soda Springs</option>
+                <option value="fish-haven">Fish Haven</option>
+            </optgroup>
+            </select><br><br>
+
+            <p>User in-danger level</p>
+            <input type="radio" id="yes" name="danger" value="yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="maybe" name="danger" value="maybe">
+<label for="maybe">Maybe</label><br>
+<input type="radio" id="no" name="danger" value="no">
+<label for="no">No</label><br><br><br>
+
+<label for="comments">Additional information or comments</label><br><br>
+
+<textarea id="comments" name="comments" rows="5" cols="50">
+This website is awesome and ...
+</textarea><br><br>
+
+            <input type="submit" value="Submit">
         </form>
     </main>
 
@@ -109,18 +133,18 @@
         <div class="copyright">
             <section>&copy; <span id="currentYear"></span> | The Olive Leaf | Ruben Dawagne</section>
             <section id="currentDate">
-                <script src="script/currentDate.js"></script>
-                <script src="script/currentYear.js"></script>
-                <script src="script/fridayPancakes.js"></script>
-                <script src="script/toggleMenu.js"></script>
-                <script src="script/windChill.js"></script>
-                <script src="script/adjustRating.js"></script>
+                <script src="script/currentdate.js"></script>
+                <script src="script/currentyear.js"></script>
+                <script src="script/fridaypancakes.js"></script>
+                <script src="script/togglemenu.js"></script>
+                <script src="script/windchill.js"></script>
+                <script src="script/adjustrating.js"></script>
             </section>
         </div>
     </footer>
     <script src="script/lazyload.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src= "webfontload.js"></script>
+    <script src="webfontload.js"></script>
 </body>
 
 </html>

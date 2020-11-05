@@ -287,7 +287,12 @@ footer {
 }
 
 form {
-    margin: 40px auto 40px auto;
+    margin: 40px auto 40px 50px;
+    text-align: left;
+}
+
+form p {
+    text-align: left;
 }
 
 .slider {
