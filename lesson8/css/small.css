@@ -327,3 +327,7 @@ form p {
     background: url(../images/bolt.png);
     cursor: pointer;
   }
+
+  #thankyou {
+      max-width: 100%;
+  }
