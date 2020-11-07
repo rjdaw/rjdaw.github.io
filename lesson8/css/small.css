@@ -343,3 +343,8 @@ form p {
   #thankyou {
       max-width: 100%;
   }
+
+  textarea {
+    width: 90%;
+    height: 200px;
+  }

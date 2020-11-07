@@ -38,7 +38,7 @@
         </ul>
     </nav>
     <main>
-        <form>
+        <form method="get" action="thanks.html">
             <label for="fullname">Full name</label><br>
             <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]{5,}" required><br><br>
             <label for="email">Email</label><br>
@@ -80,14 +80,14 @@
 
             <label for="stormregion">Storm region:</label>
             <select name="stormregion" id="stormregion">
-                <optgroup label="Select Region ...">
+                <option selected disabled>Select Region...</option>
                     <option value="preston">Preston</option>
                     <option value="soda-springs">Soda Springs</option>
                     <option value="fish-haven">Fish Haven</option>
-                </optgroup>
+                
             </select><br><br>
 
-            <p>User in-danger level</p>
+            <p>In-danger level</p>
             <input type="radio" id="yes" name="danger" value="yes">
             <label for="yes">Yes</label><br>
             <input type="radio" id="maybe" name="danger" value="maybe">
@@ -97,11 +97,11 @@
 
             <label for="comments">Additional information or comments</label><br><br>
 
-            <textarea id="comments" name="comments" rows="5" cols="50">
+            <textarea id="comments" name="comments">
 This website is awesome and ...
 </textarea><br><br>
 
-            <input type="submit" value="Submit" onclick="redirect()">
+            <input type="submit" value="Submit">
 
         </form>
     </main>
@@ -140,7 +140,6 @@ This website is awesome and ...
                 <script src="script/togglemenu.js"></script>
                 <script src="script/windchill.js"></script>
                 <script src="script/adjustrating.js"></script>
-                <script src="script/redirect.js"></script>
             </section>
         </div>
     </footer>
