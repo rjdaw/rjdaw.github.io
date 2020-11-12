@@ -39,6 +39,7 @@
     </nav>
     <main>
         <form method="get" action="thanks.html">
+            <section><h2>Personal Information</h2>
             <label for="fullname">Full name</label><br>
             <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]{5,}" required><br><br>
             <label for="email">Email</label><br>
@@ -48,6 +49,8 @@
 
             <label for="zip">Zip code</label> <br>
             <input id="zip" name="zip" type="number"><br><br>
+        </section>
+        <section><h2>Storm Information</h2>
             <label for="stormdate">Storm date</label><br>
             <input type="date" id="stormdate" name="stormdate"><br><br>
             <label for="stormtype">Storm type</label> <br>
@@ -94,14 +97,18 @@
             <label for="maybe">Maybe</label><br>
             <input type="radio" id="no" name="danger" value="no">
             <label for="no">No</label><br><br><br>
+        </section>
 
+        <section id="comment-box">
             <label for="comments">Additional information or comments</label><br><br>
 
             <textarea id="comments" name="comments">
 This website is awesome and ...
 </textarea><br><br>
+</section>
 
-            <input type="submit" value="Submit">
+
+            <input id="submit-button" type="submit" value="Submit">
 
         </form>
     </main>

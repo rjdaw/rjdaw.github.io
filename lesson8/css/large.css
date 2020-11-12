@@ -16,4 +16,29 @@
     .large-appear {
         display: inline;
     }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .8em;
+    }
+
+    #comment-box {
+        grid-column: span 2;
+    }
+
+    #submit-button {
+        width: 250px;
+        padding: 25px;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #063741;
+        transition-duration: 0.4s;
+    }
+
+    #submit-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #063741;
+        color: white;
+    }
 }
