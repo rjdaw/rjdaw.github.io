@@ -27,6 +27,13 @@
         grid-column: span 2;
     }
 
+    section {
+        background-color: rgb(215, 230, 235);
+        padding: 50px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
     #submit-button {
         width: 250px;
         padding: 25px;
