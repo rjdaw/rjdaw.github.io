@@ -39,73 +39,75 @@
     </nav>
     <main>
         <form method="get" action="thanks.html">
-            <section><h2>Personal Information</h2>
-            <label for="fullname">Full name</label><br>
-            <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]{5,}" required><br><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="amazing@heavens.com"><br><br>
-            <label for="phone">Phone number</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
+            <section>
+                <h2>Personal Information</h2>
+                <label for="fullname">Full name</label><br>
+                <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]{5,}" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="amazing@heavens.com"><br><br>
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
 
-            <label for="zip">Zip code</label> <br>
-            <input id="zip" name="zip" type="number"><br><br>
-        </section>
-        <section><h2>Storm Information</h2>
-            <label for="stormdate">Storm date</label><br>
-            <input type="date" id="stormdate" name="stormdate"><br><br>
-            <label for="stormtype">Storm type</label> <br>
-            <input list="storms" name="stormtype" id="stormtype">
+                <label for="zip">Zip code</label> <br>
+                <input id="zip" name="zip" type="number"><br><br>
+            </section>
+            <section>
+                <h2>Storm Information</h2>
+                <label for="stormdate">Storm date</label><br>
+                <input type="date" id="stormdate" name="stormdate"><br><br>
+                <label for="stormtype">Storm type</label> <br>
+                <input list="storms" name="stormtype" id="stormtype">
 
-            <datalist id="storms">
-                <option value="Flash Flood">
-                <option value="Hail">
-                <option value="Hurricane">
-                <option value="Thunderstorm">
-                <option value="Tornado">
-            </datalist><br><br>
-            <label for="rating" class="slidecontainer">Storm severity:</label>
-            <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1"
-                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-            <span id="ratingvalue">5</span>
-            <datalist id="tickmarks">
-                <option value="0">
-                <option value="1">
-                <option value="2">
-                <option value="3">
-                <option value="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">
-                <option value="9">
-                <option value="10">
-            </datalist><br><br>
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist><br><br>
+                <label for="rating" class="slidecontainer">Storm severity:</label>
+                <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1"
+                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist><br><br>
 
-            <label for="stormregion">Storm region:</label>
-            <select name="stormregion" id="stormregion">
-                <option selected disabled>Select Region...</option>
+                <label for="stormregion">Storm region:</label>
+                <select name="stormregion" id="stormregion">
+                    <option selected disabled>Select Region...</option>
                     <option value="preston">Preston</option>
                     <option value="soda-springs">Soda Springs</option>
                     <option value="fish-haven">Fish Haven</option>
-                
-            </select><br><br>
 
-            <p>In-danger level</p>
-            <input type="radio" id="yes" name="danger" value="yes">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="maybe" name="danger" value="maybe">
-            <label for="maybe">Maybe</label><br>
-            <input type="radio" id="no" name="danger" value="no">
-            <label for="no">No</label><br><br><br>
-        </section>
+                </select><br><br>
 
-        <section id="comment-box">
-            <label for="comments">Additional information or comments</label><br><br>
+                <p>In-danger level</p>
+                <input type="radio" id="yes" name="danger" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="maybe" name="danger" value="maybe">
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" id="no" name="danger" value="no">
+                <label for="no">No</label><br><br><br>
+            </section>
 
-            <textarea id="comments" name="comments">
+            <section id="comment-box">
+                <label for="comments">Additional information or comments</label><br><br>
+
+                <textarea id="comments" name="comments">
 This website is awesome and ...
 </textarea><br><br>
-</section>
+            </section>
 
 
             <input id="submit-button" type="submit" value="Submit">
