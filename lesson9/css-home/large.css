@@ -1,0 +1,53 @@
+@media only screen and (min-width: 60em) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 40px #063741;
+    }
+
+    .large-appear {
+        display: inline;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .8em;
+    }
+
+    #comment-box {
+        grid-column: span 2;
+    }
+
+    section {
+        background-color: rgb(215, 230, 235);
+        padding: 50px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+
+    #submit-button {
+        width: 250px;
+        padding: 25px;
+        background-color: white; 
+        color: black; 
+        border: 2px solid #063741;
+        transition-duration: 0.4s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #submit-button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #063741;
+        color: white;
+    }
+}

@@ -1,0 +1,350 @@
+/* Table CSS */
+
+table {
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+table, th, td {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid lightgrey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table tbody td {
+    font-size: 25px;
+}
+
+thead {
+    font-size: 40px;
+    background-color: #7fb9c2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr th {
+    font-size: 30px;
+    background-color: #628ca6;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(5) td:last-child {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot {
+    font-size: 18px;
+    background-color: #7fb9c2;
+}
+
+#black-friday {
+    font-style: italic;
+}
+
+/*************/
+
+body {
+    background-color: #094d92;
+}
+
+#pancakes {
+    background-color: lightcyan;
+    border: 1px solid #0c7489;
+    font-family: 'Oldenburg', cursive;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+header {
+    background-color: white;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header img {
+    display: block;
+    float: left;
+    padding-left: 30px;
+}
+
+header h1, p {
+    text-align: center;
+    padding-right: 130px;
+}
+
+header p {
+    font-family: 'Oldenburg', cursive;
+    font-size: 14px;
+}
+
+header h1 {
+    padding-top: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bold;
+}
+
+#responsive-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.large-appear {
+    display: none;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+nav li {
+    text-align: center;
+    font-family: 'Oldenburg', cursive;
+}
+
+nav button {
+    margin: .7rem .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}
+
+li a:link {
+    display: block;
+    color: #094d92;
+    text-decoration: none;
+    border-top: 1px solid #0c7489;
+    padding: 10px;
+}
+
+li a:visited {
+    color: #094d92;
+}
+
+footer a:visited {
+    color: #0c7489;
+}
+
+li a:hover {
+    background-color: #4bfa4b;
+    color: black;
+    padding: 15px;
+    font-size: larger;
+}
+
+li:last-child a:hover {
+    border-radius: 0 0 5px 5px;
+}
+
+.active {
+    background-color: #4bfa4b;
+}
+
+.active a:visited {
+    color: black;
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    font-family: 'Oldenburg', cursive;
+    margin: 10px;
+    border-radius: 5px;
+    padding: .5em 0 .5em;
+}
+
+main table{
+    text-align: center;
+    background-color: white;
+    font-family: 'Oldenburg', cursive;
+    margin: 50px auto 50px auto;
+    border-radius: 5px;
+    padding: .5em 0 .5em;
+}
+
+main div {
+    margin: 1.5em;
+    padding: .5em;
+}
+
+.hero-div {
+    padding: 0px;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.hero-img img{
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.weather-summary {
+    width: 220px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: radial-gradient(rgb(194, 236, 194), lightgreen, #4bfa4b);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid green;
+    font-size: 14px;
+    opacity: .95;
+}
+
+.weather-summary h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-column: 1/3;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.labels {
+    grid-column: 1/2;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.labels p {
+    padding: 0px;
+    text-align: right;
+}
+
+.values {
+    grid-column: 2/3;
+}
+
+.values p {
+    padding: 0px;
+    text-align: left;
+}
+
+#forecast {
+    padding: 0px;
+}
+
+.article {
+    background-color: rgb(194, 236, 194);
+    border: 1px solid #0c7489;
+}
+
+.article img {
+    max-width: 100%;
+}
+
+#author {
+    font-style: italic;
+}
+
+.article p {
+    padding: 0px;
+    font-size: 13px;
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 28px;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.contact h4 {
+    font-size: 24px;
+}
+
+.contact p {
+    text-align: left;
+    font-size: 20px;
+    padding-left: 9em;
+}
+
+.social img {
+    border-radius: 50px 50px 50px 50px;
+    padding: 3px;
+}
+
+.social {
+    margin-bottom: 15px;
+}
+
+.copyright {
+    background-color: khaki;
+}
+
+form {
+    margin: 40px auto 40px 50px;
+    text-align: left;
+}
+
+form p {
+    text-align: left;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background:  #0c7489;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url(../images/bolt.png);
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url(../images/bolt.png);
+    cursor: pointer;
+  }
+
+  #thankyou {
+      max-width: 100%;
+  }
+
+  textarea {
+    width: 90%;
+    height: 200px;
+  }
