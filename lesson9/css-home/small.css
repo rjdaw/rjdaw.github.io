@@ -202,3 +202,23 @@ footer {
     background-color: khaki;
 }
 
+.town-cards section img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.town-cards section {
+    background-color: rgb(194, 236, 194);
+    border: 1px solid #0c7489;
+    padding: 10px;
+    margin: 20px;
+}
+
+.town-cards section p {
+    padding-right: 0;
+}
+
+.town-cards section h3 {
+    font-style: italic;
+    
+}
