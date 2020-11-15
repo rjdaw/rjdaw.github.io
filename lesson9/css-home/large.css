@@ -3,9 +3,22 @@
         max-width: 1200px;
         margin: 0 auto;
     }
+
     .large-appear {
         display: inline;
     }
 
+    .town-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .town-cards section {
+        display: block;
+    }
+
+    .wireframes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

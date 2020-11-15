@@ -90,14 +90,14 @@ footer a:visited {
     color: #0c7489;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #4bfa4b;
     color: black;
     padding: 15px;
     font-size: larger;
 }
 
-li:last-child a:hover {
+nav li:last-child a:hover {
     border-radius: 0 0 5px 5px;
 }
 
@@ -202,6 +202,10 @@ footer {
     background-color: khaki;
 }
 
+.copyright a {
+    text-decoration: none;
+}
+
 .town-cards section img {
     max-width: 100%;
     margin: auto;
@@ -220,5 +224,9 @@ footer {
 
 .town-cards section h3 {
     font-style: italic;
-    
+}
+
+.wireframes img {
+    max-width: 100%;
+    margin: auto;
 }
