@@ -6,4 +6,4 @@ let options = {
     year: "numeric"
 };
 
-document.getElementById("currentDate").innerHTML = new Date().toLocaleDateString("en-GB", options);
+document.getElementById("currentdate").innerHTML = new Date().toLocaleDateString("en-GB", options);
