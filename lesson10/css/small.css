@@ -125,7 +125,6 @@ main div {
 
 .weather-summary {
     width: 220px;
-    position: absolute;
     top: 20px;
     left: 30px;
     background: radial-gradient(rgb(194, 236, 194), lightgreen, #4bfa4b);

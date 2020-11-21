@@ -38,6 +38,7 @@
     .weather-summary {
         top: 50px;
         left: 300px;
+        position: absolute;
     }
 
     .contact p {
