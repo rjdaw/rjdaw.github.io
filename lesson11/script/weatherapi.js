@@ -38,7 +38,7 @@ const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(eventsURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        const towns = jsonObject['towns'];
+        const towns = jsObject['towns'];
         const filtered = towns.filter(town => (town.name == "Preston"));
 
         let eventList = document.createElement('ul');
@@ -47,9 +47,9 @@ fetch(eventsURL)
             let event = document.createElement('li');
     
             event.textContent = filtered[0].events[i];
-            eventList.appendChild(eventLi);
+            eventList.appendChild(event);
           }
 
-          document.querySelector('div.events').appendChild(eventList);
+          document.querySelector('section.events').appendChild(eventList);
         
     });

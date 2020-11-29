@@ -184,6 +184,24 @@ th {
     background-color: rgb(194, 236, 194);
 }
 
+.events {
+    background-color: rgb(194, 236, 194);
+    border: 1px solid #0c7489;
+    margin: 25px;
+}
+
+.events h3 {
+    text-align: center;
+    border-bottom: double;
+    margin: 5px;
+    padding: 5px;
+}
+
+.events li {
+    list-style: none;
+    padding: 5px;
+}
+
 .article {
     background-color: rgb(194, 236, 194);
     border: 1px solid #0c7489;

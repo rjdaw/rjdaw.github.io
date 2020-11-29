@@ -32,3 +32,24 @@ fetch(forecastURL)
             forecasttemp[i].textContent = Math.round(filteredObject[i].main.temp);
         }
     });
+
+const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(eventsURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            const towns = jsObject['towns'];
+            const filtered = towns.filter(town => (town.name == "Soda Springs"));
+    
+            let eventList = document.createElement('ul');
+    
+            for (let i = 0; i < filtered[0].events.length; i++) {
+                let event = document.createElement('li');
+        
+                event.textContent = filtered[0].events[i];
+                eventList.appendChild(event);
+              }
+    
+              document.querySelector('section.events').appendChild(eventList);
+            
+        });
