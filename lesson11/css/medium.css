@@ -1,0 +1,58 @@
+@media only screen and (min-width: 37.5em) {
+    header p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    #forecast {
+        display: block;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+
+    li:first-child a:hover {
+        border-radius: 5px 0 0 5px;
+    }
+
+    li:last-child a:hover {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .weather-summary {
+        top: 50px;
+        left: 300px;
+        position: absolute;
+    }
+
+    .contact p {
+        text-align: left;
+        margin-left: 200px;
+    }
+
+    .contact h4 {
+        text-align: left;
+        margin-left: 380px;
+    }
+
+    .contact img{
+        float: left;
+    }
+
+}
