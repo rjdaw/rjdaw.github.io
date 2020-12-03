@@ -7,7 +7,22 @@ fetch(apiURL)
         document.getElementById('temp').textContent = Math.round(jsObject.main.temp);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('speed').textContent = jsObject.wind.speed;
+
+    //Wind chill calculations
+    let temp = jsObject.main.temp;
+    let speed = jsObject.wind.speed;
+    
+    let windChill = parseInt(Math.round(35.74 + 0.6215 * temp - 35.75 * speed**.16 + .4275 * temp * speed**.16));
+    
+    if (temp <= 50 && speed > 3) {
+    document.getElementById("chill").innerHTML = windChill + '&#176;F';
+    
+    } else {
+    document.getElementById("chill").innerHTML = "N/A";
+    }
     });
+
+
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=af075121afb12f2ae54562fadc9117a2&units=imperial";
 
