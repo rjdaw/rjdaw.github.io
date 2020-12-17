@@ -36,6 +36,7 @@ header h1 {
    padding-top: 20px;
    font-family: 'Ranchers', cursive;
 }
+/****************************************/
 
 /* Navigation */
 #responsive-nav {
@@ -99,52 +100,95 @@ nav li:last-child a:hover {
 .active a:visited {
    color: white;
 }
+/***********************************/
 
-/* Slideshow Styling */
+/* Main */
+main {
+   text-align: center;
+   border: 2px solid #b05536;
+   background-color: #FFE0AB;
+   padding-bottom: 10px;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+main h1, p {
+   text-align: center;
+   color: #050517;
+}
+
+main h2, h3 {
+   font-family: 'Rancho', cursive;
+   font-size: 24px;
+   font-weight: normal;
+}
+
+main p {
+   font-family: 'Mali', cursive;
+}
+
+main h1 {
+   margin: 0px;
+   padding-top: 20px;
+   font-family: 'Ranchers', cursive;
+}
+
+/* Slideshow */
 #slider {
     margin: 0 auto;
     width: 700px;
     max-width: 100%;
     text-align: center;
  }
+
  #slider input[type=radio] {
     display: none;
  }
+
  .slide {
     background-color: #FFE0AB;
  }
+
  #slider label {
     cursor:pointer;
     text-decoration: none;
  }
+
  #slides {
     border: 2px solid #EED4AD;
     background: #fff;
     position: relative;
     z-index: 1;
  }
+
  #overflow {
     width: 100%;
     overflow: hidden;
  }
+
  #slide1:checked ~ #slides .inner {
     margin-left: 0;
  }
+
  #slide2:checked ~ #slides .inner {
     margin-left: -100%;
  }
+
  #slide3:checked ~ #slides .inner {
     margin-left: -200%;
  }
+
  #slide4:checked ~ #slides .inner {
     margin-left: -300%;
  }
+
  #slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
     line-height: 0;
     height: 480px;
  }
+
  #slides .slide {
     width: 25%;
     float:left;
@@ -154,6 +198,7 @@ nav li:last-child a:hover {
     height: 100%;
     color: #fff;
  }
+
  #controls {
     margin: -180px 0 0 0;
     width: 100%;
@@ -161,6 +206,7 @@ nav li:last-child a:hover {
     z-index: 3;
     position: relative;
  }
+
  #controls label {
     transition: opacity 0.2s ease-out;
     display: none;
@@ -168,13 +214,16 @@ nav li:last-child a:hover {
     height: 50px;
     opacity: .4;
  }
+
  #controls label:hover {
     opacity: 1;
  }
+
  #bullets {
     margin: 150px 0 0;
     text-align: center;
  }
+
  #bullets label {
     display: inline-block;
     width: 10px;
@@ -184,13 +233,35 @@ nav li:last-child a:hover {
     background: #FFE0AB;
     margin: 0 10px;
  }
+
  #slide1:checked ~ #bullets label:nth-child(1),
  #slide2:checked ~ #bullets label:nth-child(2),
  #slide3:checked ~ #bullets label:nth-child(3),
  #slide4:checked ~ #bullets label:nth-child(4) {
     background:#4B5842;
  }
+
 .hide {
    display: none;
 }
+/**************************************************/
 
+/* Reservation Div */
+#reserve-now-div {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+#womanscooter {
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: relative;
+}
+
+#reserve-now-img {
+   top: 2px;
+   left: 0;
+   position: absolute;
+}
