@@ -265,3 +265,44 @@ main h1 {
    left: 0;
    position: absolute;
 }
+/*********************/
+
+/*Table Rental Summary */
+table {
+   box-shadow: 5px 5px 5px #b05536;
+   margin: 10px;
+}
+
+table span {
+   font-size: 12px;
+   font-weight: normal;
+}
+
+table, th, td {
+   font-family: 'Mali', sans-serif;
+   border: 2px solid #b05536;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+table tr:nth-child(2) {
+   font-weight: bold;
+}
+
+table tbody td {
+   font-size: 14px;
+}
+
+thead {
+   font-size: 16px;
+   color: white;
+   background-color: #b05536;
+}
+
+tbody tr:nth-child(even) {
+   background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #fff8ec;
+}
