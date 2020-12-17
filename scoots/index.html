@@ -19,32 +19,82 @@
 <body>
     <header>
         <div id="weather-alert"></div>
-        <a href="index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
+        <a href="../scoots/index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
         <h1>Scoots</h1>
-        <p>So Noah knew and so do you</p>
+        <p>Th Island of the Swallows on Wheels</p>
     </header>
 
     <nav>
         <button id="menu-button" onclick="toggleMenu()">&#9776;
         </button>
         <ul id="responsive-nav" class="hide">
-            <li><a href="../lesson9/index.html">Home</a></li>
-            <li class="active"><a href="preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../lesson7/weather-gallery.html">Gallery</a></li>
+            <li class="active"><a href="../scoots/index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
-        <div class="hero-div">
-            <picture class="hero-img">
-                <source media="(max-width:465px)" srcset="images/olive-hero-small.jpg">
-                <source media="(max-width:800px)" srcset="images/olive-hero-medium.jpg">
-                <source media="(max-width:1100px)" srcset="images/olive-hero-large.jpg">
-                <img src="images/olive-hero-xlarge.jpg" alt="Leaves Hero">
-            </picture>
+        <h2>Cozumel - The Island of the Swallows</h2>
+        <div class="slide-div">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                            <div class="slide-content">
+                               <h2>Slide 1</h2>
+                               <p>Content for Slide 1</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_2">
+                            <div class="slide-content">
+                               <h2>Slide 2</h2>
+                               <p>Content for Slide 2</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_3">
+                            <div class="slide-content">
+                               <h2>Slide 3</h2>
+                               <p>Content for Slide 3</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_4">
+                            <div class="slide-content">
+                               <h2>Slide 4</h2>
+                               <p>Content for Slide 4</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_4">
+                            <div class="slide-content">
+                               <h2>Slide 4</h2>
+                               <p>Content for Slide 4</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                   <label for="slide5"></label>
+                </div>
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                   <label for="slide5"></label>
+                </div>
+             </div>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
                 <section class="labels">
