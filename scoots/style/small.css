@@ -273,7 +273,7 @@ table {
    margin: 10px;
 }
 
-table span {
+#rentals-summary span {
    font-size: 12px;
    font-weight: normal;
 }
@@ -305,4 +305,93 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(odd) {
    background-color: #fff8ec;
+}
+/**************************************/
+
+/* Weather Summary */
+.weather-summary {
+   margin: 20px auto 10px auto;
+   width: 420px;
+   background: radial-gradient(rgb(253, 240, 220), #FFE0AB);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   border: 2px solid #b05536;
+   font-size: 14px;
+   opacity: .95;
+}
+.weather-summary h3 {
+   border-bottom: 2px solid #4B5842;
+   padding-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   grid-column: 1/3;
+   margin-bottom: 0px;
+   font-size: 22px;
+}
+
+.labels {
+   grid-column: 1/2;
+   justify-content: right;
+   padding-right: 10px;
+}
+
+.labels p {
+   padding: 0px;
+   text-align: right;
+   font-weight: bold;
+}
+
+.values {
+   grid-column: 2/3;
+}
+
+.values p {
+   padding: 0px;
+   text-align: left;
+}
+#forecast table {
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+}
+#forecast table tbody th:nth-last-child(-n+2) {
+   display: none;
+ }
+#forecast table tbody td:nth-last-child(-n+2) {
+   display: none;
+ }
+/*************************************************/
+
+/* Footer */
+.contact {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+.contact p:first-child {
+   grid-column: 1/2;
+}
+.contactp:nth-child(2) {
+   grid-column: 2/3;
+}
+footer h4 {
+   text-align: center;
+   font-family: 'Ranchers', cursive;
+   font-size: 22px;
+   margin-top: 10px;
+   margin-bottom: 4px;
+}
+.social {
+   text-align: center;
+   margin: auto;
+   width: 50%;
+}
+.social img {
+   border-radius: 5px;
+   margin: 5px;
+}
+.copyright {
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 10px;
 }

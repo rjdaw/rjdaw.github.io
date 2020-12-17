@@ -37,7 +37,7 @@
         </ul>
     </nav>
     <main>
-        <h2>Cozumel - The Island of the Swallows</h2>
+        <h2>San Miguel de Cozumel</h2>
         <div class="slide-div hide">
             <div id="slider">
                 <input type="radio" name="slider" id="slide1" checked>
@@ -80,23 +80,6 @@
                 </div>
              </div>
              
-            <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <section class="labels">
-                    <p>Currently:</p>
-                    <p>High:</p>
-                    <p>Wind Chill:</p>
-                    <p>Humidity:</p>
-                    <p>Wind Speed:</p>
-                </section>
-                <section class="values">
-                    <p><span id="desc"></span></p>
-                    <p><span id="temp"></span>&#176;F</p>
-                    <p><span id="chill"></span></p>
-                    <p><span id="humidity"></span>%</p>
-                    <p><span id="speed"></span> mph</p>
-                </section>
-            </section>
         </div>
         <div id="reserve-now-div">
             <img id="womanscoot" src="images/womanscooter.jpg" alt="Woman on Scooter">
@@ -173,8 +156,23 @@
             </tbody>
 
           </table>
-        <div class="hide" id="forecast">
-            <h3>5 Day Forecast</h3>
+          <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <section class="labels">
+                <p>Currently:</p>
+                <p>High:</p>
+                <p>Humidity:</p>
+                <p>Wind Speed:</p>
+            </section>
+            <section class="values">
+                <p><span id="desc"></span></p>
+                <p><span id="temp"></span>&#176;F</p>
+                <p><span id="humidity"></span>%</p>
+                <p><span id="speed"></span> mph</p>
+            </section>
+        </section>
+        <div id="forecast">
+            <h3>3 Day Forecast</h3>
             <table>
                 <tr>
                     <th class="dayofweek"></th>
@@ -203,42 +201,23 @@
             </table>
         </div>
 
-        <div class="article">
-            <h3>Article</h3>
-            <img src="images/camping.jpg" alt="Camping View">
-            <p id="author">By Ruben Dawagne</p>
-            <p>Camping is an outdoor activity involving overnight stays away from home in a shelter, such as a tent or a
-                recreational vehicle. Typically participants leave developed areas to spend time outdoors in more
-                natural ones in pursuit of activities providing them enjoyment. The night (or more) spent outdoors
-                distinguishes camping from day-tripping, picnicking, and other similarly short-term recreational
-                activities.
-
-                Camping as a recreational activity became popular among elites in the early 20th century. With time, it
-                grew in popularity among other socioeconomic classes. Modern campers frequent publicly owned natural
-                resources such as national and state parks, wilderness areas, and commercial campgrounds.<br>
-                https://en.wikipedia.org/wiki/Camping</p>
-        </div>
-
-
     </main>
 
     <footer>
+        <h4>~Scoots</h4>
         <div class="contact">
-            <img class="hide" src="images/preston-map.png" alt="Map">
-            <h4>The Olive Leaf</h4>
-            <p id="address">75, Sweet Climate Drive<br>
-                Preston, ID 83263</p>
-            <p>&#9743; 999.999.9999<br>
-                &#9993; theoliveleaf@tol.com
+            <p id="address">Calle Aventura, 123<br>
+                Colonia Centro<br>
+                Cozumel, Quitna Roo<br>
+                77000 Mexico</p>
+            <p>&#9743; 477.555.9999<br>
+                &#9993; scoots-rentals@tol.com
             </p>
         </div>
 
         <div class="social">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="images/facebook.png" alt="facebook icon" />
-            </a>
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <img src="images/whatsapp.png" alt="whatsapp icon" />
             </a>
             <a href="https://www.pinterest.com/" target="_blank">
                 <img src="images/pinterest.png" alt="pinterest icon" />
@@ -248,13 +227,14 @@
             </a>
         </div>
         <div class="copyright">
-            <section>&copy; <span id="currentyear"></span> | The Olive Leaf | Ruben Dawagne</section>
+            <section>&copy; <span id="currentyear"></span> | ~Scoots | Ruben Dawagne</section>
             <section id="currentdate">
                 <script src="script/currentdate.js"></script>
                 <script src="script/currentyear.js"></script>
                 <script src="script/fridaypancakes.js"></script>
                 <script src="script/togglemenu.js"></script>
                 <script src="script/weatherapi.js"></script>
+                <div id="updated">Last Updated: <span id="currentdate"></span> <script src="script/lastupdate.js"></script></div>
             </section>
             <section>Thanks <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for the the weather information!</section>
         </div>
