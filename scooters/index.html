@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ruben Dawagne">
+    <meta name="description"
+        content="WDD 230 - This page is the home page of Scoots.">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Ranchers&family=Rancho&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/scoots-favicon.ico">
+    <title>Scoots - Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="weather-alert"></div>
+        <a href="index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
+        <h1>Scoots</h1>
+        <p>So Noah knew and so do you</p>
+    </header>
+
+    <nav>
+        <button id="menu-button" onclick="toggleMenu()">&#9776;
+        </button>
+        <ul id="responsive-nav" class="hide">
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/weather-gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="hero-div">
+            <picture class="hero-img">
+                <source media="(max-width:465px)" srcset="images/olive-hero-small.jpg">
+                <source media="(max-width:800px)" srcset="images/olive-hero-medium.jpg">
+                <source media="(max-width:1100px)" srcset="images/olive-hero-large.jpg">
+                <img src="images/olive-hero-xlarge.jpg" alt="Leaves Hero">
+            </picture>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <section class="labels">
+                    <p>Currently:</p>
+                    <p>High:</p>
+                    <p>Wind Chill:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                </section>
+                <section class="values">
+                    <p><span id="desc"></span></p>
+                    <p><span id="temp"></span>&#176;F</p>
+                    <p><span id="chill"></span></p>
+                    <p><span id="humidity"></span>%</p>
+                    <p><span id="speed"></span> mph</p>
+                </section>
+            </section>
+        </div>
+        <div class="hide" id="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th class="dayofweek"></th>
+                    <th class="dayofweek"></th>
+                    <th class="dayofweek"></th>
+                    <th class="dayofweek"></th>
+                    <th class="dayofweek"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="forecasticon" src="..." alt="..."><br>
+                        <span class="forecasttemp"></span>&#176;F</td>
+                    <td>
+                        <img class="forecasticon" src="..." alt="..."><br>
+                        <span class="forecasttemp"></span>&#176;F</td>
+                    <td>
+                        <img class="forecasticon" src="..." alt="..."><br>
+                        <span class="forecasttemp"></span>&#176;F</td>
+                    <td>
+                        <img class="forecasticon" src="..." alt="..."><br>
+                        <span class="forecasttemp"></span>&#176;F</td>
+                    <td>
+                        <img class="forecasticon" src="..." alt="..."><br>
+                        <span class="forecasttemp"></span>&#176;F</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="article">
+            <h3>Article</h3>
+            <img src="images/camping.jpg" alt="Camping View">
+            <p id="author">By Ruben Dawagne</p>
+            <p>Camping is an outdoor activity involving overnight stays away from home in a shelter, such as a tent or a
+                recreational vehicle. Typically participants leave developed areas to spend time outdoors in more
+                natural ones in pursuit of activities providing them enjoyment. The night (or more) spent outdoors
+                distinguishes camping from day-tripping, picnicking, and other similarly short-term recreational
+                activities.
+
+                Camping as a recreational activity became popular among elites in the early 20th century. With time, it
+                grew in popularity among other socioeconomic classes. Modern campers frequent publicly owned natural
+                resources such as national and state parks, wilderness areas, and commercial campgrounds.<br>
+                https://en.wikipedia.org/wiki/Camping</p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="contact">
+            <img class="hide" src="images/preston-map.png" alt="Map">
+            <h4>The Olive Leaf</h4>
+            <p id="address">75, Sweet Climate Drive<br>
+                Preston, ID 83263</p>
+            <p>&#9743; 999.999.9999<br>
+                &#9993; theoliveleaf@tol.com
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsapp.png" alt="whatsapp icon" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+        <div class="copyright">
+            <section>&copy; <span id="currentyear"></span> | The Olive Leaf | Ruben Dawagne</section>
+            <section id="currentdate">
+                <script src="script/currentdate.js"></script>
+                <script src="script/currentyear.js"></script>
+                <script src="script/fridaypancakes.js"></script>
+                <script src="script/togglemenu.js"></script>
+                <script src="script/weatherapi.js"></script>
+            </section>
+            <section>Thanks <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for the the weather information!</section>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src= "script/webfontload.js"></script>
+</body>
+
+</html>
