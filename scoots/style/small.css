@@ -1,6 +1,8 @@
 body {
    background-color: #EED4AD;
    color: #050517;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /* Header */
@@ -15,10 +17,16 @@ header {
    grid-template-rows: auto;
 }
 
+header a {
+   margin-left: auto;
+   margin-right: auto;
+}
+
 header img {
    display: block;
    float: left;
-   padding-left: 50px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 header h1, p {
@@ -229,7 +237,7 @@ main h1 {
     width: 10px;
     height: 10px;
     border-radius:100%;
-    border: 1px solid #EED4AD;
+    border: 1px solid #b05536;
     background: #FFE0AB;
     margin: 0 10px;
  }
@@ -271,6 +279,9 @@ main h1 {
 table {
    box-shadow: 5px 5px 5px #b05536;
    margin: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
 }
 
 #rentals-summary span {
@@ -311,7 +322,7 @@ tbody tr:nth-child(odd) {
 /* Weather Summary */
 .weather-summary {
    margin: 20px auto 10px auto;
-   width: 420px;
+   width: 90%;
    background: radial-gradient(rgb(253, 240, 220), #FFE0AB);
    display: grid;
    grid-template-columns: 1fr 1fr;

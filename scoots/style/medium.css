@@ -1,5 +1,21 @@
 @media only screen and (min-width: 700px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
     .hide {
-        display: block;
+        display: flex;
+    }
+
+    #slider {
+        margin-bottom: 40px;
     }
 }

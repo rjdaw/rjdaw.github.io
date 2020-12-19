@@ -1,9 +1,9 @@
-const alertURL = "https://api.openweathermap.org/data/2.5/onecall??id=3530103&appid=af075121afb12f2ae54562fadc9117a2";
+const alertURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4230&lon=-86.9223&exclude=minutely,hourly&appid=af075121afb12f2ae54562fadc9117a2";
 
 fetch(alertURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        document.getElementById('weather-alert').textContent = jsObject.alerts[0].description;
+        document.getElementById('weather-alert').textContent = jsObject.alerts.description;
     });
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=af075121afb12f2ae54562fadc9117a2&units=imperial";

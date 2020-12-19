@@ -82,7 +82,11 @@
              
         </div>
         <div id="reserve-now-div">
-            <img id="womanscoot" src="images/womanscooter.jpg" alt="Woman on Scooter">
+            <picture id="womanscoot">
+                <source media="(max-width:475px)" srcset="images/emptyscooter.jpg">
+                <source media="(max-width:840px)" srcset="images/womanscooter.jpg">
+                <img src="images/womanscooter-large.jpg" alt="Woman on Scooter">
+            </picture>
             <a href="reservations.html"><img id="reserve-now-img" src="images/reserve-now.png" alt="Reserve Now"></a>
         </div>
         <table id="rentals-summary">
