@@ -3,7 +3,8 @@ const alertURL = "https://api.openweathermap.org/data/2.5/onecall?lat=20.4230&lo
 fetch(alertURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        document.getElementById('weather-alert').textContent = jsObject.alerts.description;
+        let alert = jsObject.alerts.description;
+        window.alert(alert); 
     });
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=af075121afb12f2ae54562fadc9117a2&units=imperial";
