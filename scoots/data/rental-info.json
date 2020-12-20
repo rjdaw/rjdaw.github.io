@@ -1,0 +1,119 @@
+{
+    "rental": 
+    [
+        {
+            "name": "~Honda Metro Scooter",
+            "picture": "images/honda-metro.jpg",
+            "max-persons": "1",
+            "reservation": 
+            [
+                {
+                "half": "20",
+                "full": "30"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "25",
+                "full": "35"
+                }
+            ]
+        },
+        {
+            "name": "~Honda Dio Scooter",
+            "picture": "images/honda-dio.png",
+            "max-persons": "2",
+            "reservation": 
+            [
+                {
+                "half": "30",
+                "full": "40"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "35",
+                "full": "45"
+                }
+            ]
+        },
+        {
+            "name": "~Honda PCX150 Scooter",
+            "picture": "images/honda-pcx.jpg",
+            "max-persons": "2",
+            "reservation": 
+            [
+                {
+                "half": "40",
+                "full": "50"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "45",
+                "full": "55"
+                }
+            ]
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "picture": "images/honda-pioneer.png",
+            "max-persons": "4",
+            "reservation": 
+            [
+                {
+                "half": "50",
+                "full": "70"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "60",
+                "full": "80"
+                }
+            ]
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "picture": "images/jeep-4door.jpg",
+            "max-persons": "5",
+            "reservation": 
+            [
+                {
+                "half": "70",
+                "full": "100"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "85",
+                "full": "125"
+                }
+            ]
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "picture": "images/jeep-2door.jpg",
+            "max-persons": "4",
+            "reservation": 
+            [
+                {
+                "half": "60",
+                "full": "85"
+                }
+            ],
+            "walk-in": 
+            [
+                {
+                "half": "70",
+                "full": "90"
+                }
+            ]
+        }
+    ]
+}
