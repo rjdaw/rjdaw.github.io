@@ -376,16 +376,17 @@ tbody tr:nth-child(odd) {
 /* Footer */
 .contact {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
 }
 .contact p:first-child {
    grid-column: 1/2;
 }
-.contactp:nth-child(2) {
-   grid-column: 2/3;
+.contact p:nth-child(3) {
+   grid-column: 3/4;
 }
-footer h4 {
+.contact p:nth-child(2) {
+   grid-column: 2/3;
    text-align: center;
    font-family: 'Ranchers', cursive;
    font-size: 22px;
