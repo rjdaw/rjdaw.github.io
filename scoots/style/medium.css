@@ -11,6 +11,10 @@
         display: none;
     }
 
+    nav li:last-child a:hover {
+        border-radius: 0px 5px 0px 0px;
+     }
+
     .hide {
         display: flex;
     }
