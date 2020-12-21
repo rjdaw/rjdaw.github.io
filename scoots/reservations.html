@@ -42,28 +42,34 @@
         <form method="get" action="confirm.html">
             <section>
                 <h2>Personal Information</h2>
-                <label for="fullname">Full name</label><br>
-                <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]" required><br><br>
-                <label for="email">Email</label><br>
+                <label for="firstname">First name*</label><br>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                <label for="lastname">Last name*</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                <label for="email">Email*</label><br>
                 <input type="email" id="email" name="email" placeholder="johndoe@coolmail.com" required><br><br>
-                <label for="phone">Phone number</label><br>
+                <label for="phone">Phone number*</label><br>
                 <input type="tel" id="phone" name="phone" required><br><br>
                 <label for="country">Country</label> <br>
                 <input id="country" name="country"><br><br>
                 <label for="state">State</label> <br>
                 <input id="state" name="state"><br><br>
+                <label for="cruiseline">Cruise line (if applicable)</label> <br>
+                <input id="cruiseline" name="cruiseline"><br><br>
             </section>
             <section>
                 <h2>Rental Information</h2>
-                <label for="rentdate">Rental date</label><br>
-                <input type="date" id="rentdate" name="rentdate"><br><br>
-                <p>Rental length</p>
-                <input type="radio" id="half" name="length" value="half">
+                <label for="rentdate">Rental date*</label><br>
+                <input type="date" id="rentdate" name="rentdate" required><br><br>
+                <p>Rental length*</p>
+                <input type="radio" id="half" name="length" value="half" required>
                 <label for="half">Half Day (3 hrs)</label><br>
                 <input type="radio" id="full" name="length" value="full">
                 <label for="full">Full Day</label><br>
-                <label for="vehicle">Vehicle:</label>
-                <select name="vehicle" id="vehicle">
+                
+                <br>
+                <label for="vehicle">Vehicle*</label><br>
+                <select name="vehicle" id="vehicle" required>
                     <option selected disabled>Select Vehicle...</option>
                     <optgroup label="Scooters">
                         <option value="hondametro">~Honda Metro Scooter</option>
@@ -80,37 +86,33 @@
 
                 </select><br><br>
 
-                </datalist><br><br>
-                <label for="rating" class="slidecontainer">Storm severity:</label>
-                <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1"
-                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span>
-                <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist><br><br>
-
-            </section>
-
-            <section id="comment-box">
-                <label for="comments">Additional information or comments</label><br><br>
-
+                <label for="comments">Special accommodations/comments</label><br><br>
                 <textarea id="comments" name="comments">
-This website is awesome and ...
 </textarea><br><br>
             </section>
 
-
-            <input id="submit-button" type="submit" value="Submit">
+            <section id="info-services">
+                <h2>Information and Services</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>Rentals may be returned to either location.</li>
+</ul>
+                <input type="checkbox" id="terms" name="terms" value="terms" required>
+<label for="terms">I have read and agree with the Information and Services mentioned above*</label><br>
+<br>
+<br>
+<input id="submit-button" type="submit" value="Submit">
+</section>
+            
+        
 
         </form>
 
@@ -144,8 +146,6 @@ This website is awesome and ...
             <section id="currentdate">
                 <script src="script/currentyear.js"></script>
                 <script src="script/togglemenu.js"></script>
-                <script src="script/getprices.js"></script>
-                <script src="script/reservenow.js"></script>
                 <p>Last Updated:</p> <span id="currentdate"></span>
                 <script src="script/lastupdate.js"></script>
             </section>
