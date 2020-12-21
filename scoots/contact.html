@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ruben Dawagne">
+    <meta name="description" content="WDD 230 - This page is the tours page of Scoots.">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Ranchers&family=Rancho&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/scoots-favicon.ico">
+    <title>Scoots - Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div id="weather-alert"></div>
+        <a href="../scoots/index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
+        <h1>Scoots</h1>
+        <p>The Island of the Swallows on Wheels</p>
+    </header>
+
+    <nav>
+        <button id="menu-button" onclick="toggleMenu()">&#9776;
+        </button>
+        <ul id="responsive-nav" class="hide">
+            <li><a href="../scoots/index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>San Miguel de Cozumel</h2>
+        <div id="hero-res">
+            <img id="beach-banner" src="images/beach-banner2.jpg" alt="Beach Banner">
+        </div>
+        <form method="get" action="confirm.html">
+            <section id="contact-us">
+                <h2>Personal Information</h2>
+                <label for="firstname">First name*</label><br>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                <label for="lastname">Last name*</label><br>
+                <input type="text" id="lastname" name="lastname" required><br><br>
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" name="email" placeholder="johndoe@coolmail.com" required><br><br>
+                <label for="comments">Message</label><br>
+                <textarea id="comments" name="comments">
+</textarea><br><br>
+                <div class="button-div">
+                    <input id="send-button" type="submit" value="Send">
+                </div>
+            </section>
+        </form>
+        <section id="find-us">
+            <div id="location1">
+            <h2>Find us here!</h2>
+            <h3>El Centro de Cozumel</h3>
+            <p>5ta. Avenida norte Entre calle 2 norte,<br>
+                Calle 4 Nte y, Centro <br>
+                77600 San Miguel de Cozumel, Q.R
+            </p>
+        <iframe width="350" height="350" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=cozumel%20ferry%20dock&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <div id="location2">
+            <h2>Or here!</h2>
+            <h3>Near the Terminal Puerta Maya</h3>
+            <p>Plaza Mexico, Av Claudio Canto<br>
+                77600 San Miguel de Cozumel, Q.R
+            </p>
+        <iframe width="350" height="350" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Terminal%20puerta%20maya&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p id="address">Calle Aventura, 123<br>
+                Colonia Centro<br>
+                Cozumel, Quitna Roo<br>
+                77000 Mexico</p>
+            <p>~Scoots</p>
+            <p>&#9743; 477.555.9999<br>
+                &#9993; scoots-rentals@tol.com
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+        <div class="copyright">
+            <section>&copy; <span id="currentyear"></span> | ~Scoots | Ruben Dawagne</section>
+            <section id="currentdate">
+                <script src="script/currentyear.js"></script>
+                <script src="script/togglemenu.js"></script>
+                <script src="script/lazyload.js"></script>
+                <p>Last Updated:</p> <span id="currentdate"></span>
+                <script src="script/lastupdate.js"></script>
+            </section>
+            <section>Thanks <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for the the weather
+                information!</section>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="script/webfontload.js"></script>
+</body>
+
+</html>

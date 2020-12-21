@@ -476,6 +476,11 @@ form section {
    margin: 10px;
 }
 
+form textarea {
+   width: 20em;
+   height: 8em;
+}
+
 #info-services {
    padding-bottom: 30px;
 }
@@ -554,5 +559,45 @@ article {
    padding: 30px;
    background-color: #EED4AD;
    border: 2px dashed #b05536;
+   border-radius: 5px;
+}
+
+/* Contact */
+
+.button-div {
+   text-align: center;
+}
+
+#contact-us {
+   border-bottom: none;
+   text-align: center;
+}
+
+#send-button {
+   width: 100px;
+   padding: 5px;
+   background-color: #FFE0AB; 
+   color: black; 
+   border: 2px solid #b05536;
+   transition-duration: 0.2s;
+   font-family: "Rancho";
+   font-size: 20px;
+   text-align: center;
+}
+
+#send-button:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   background-color: #b05536;
+   color: white;
+}
+
+#find-us h2 {
+   font-size: 30px;
+}
+
+#find-us div {
+   border: 2px solid #b05536;
+   margin: 10px;
+   padding: 10px;
    border-radius: 5px;
 }

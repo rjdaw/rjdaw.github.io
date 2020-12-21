@@ -56,4 +56,8 @@
         grid-column: 1/3;
     }
 
+    #find-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
