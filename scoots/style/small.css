@@ -449,6 +449,15 @@ tbody tr:nth-child(odd) {
 
 /* Reservations */
 
+#hero-res {
+   margin: 0 10px 0 10px;
+}
+
+#beach-banner {
+   width: 100%;
+   border-radius: 5px;
+}
+
 form {
    display: flex;
    flex-wrap: wrap;
