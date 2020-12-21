@@ -601,3 +601,8 @@ article {
    padding: 10px;
    border-radius: 5px;
 }
+
+iframe {
+   height: 350px;
+   width: 350px;
+}
