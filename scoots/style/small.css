@@ -430,19 +430,19 @@ tbody tr:nth-child(odd) {
 
 /**************/
 
-#reserve-button {
-   width: 250px;
-   padding: 25px;
-   background-color: white; 
+#all-rentals button {
+   width: 100px;
+   padding: 5px;
+   background-color: #FFE0AB; 
    color: black; 
-   border: 2px solid #063741;
-   transition-duration: 0.4s;
+   border: 2px solid #b05536;
+   transition-duration: 0.2s;
+   font-family: "Rancho";
    font-size: 20px;
-   font-weight: bold;
 }
 
-#reserve-button:hover {
+#all-rentals button:hover {
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-   background-color: #063741;
+   background-color: #b05536;
    color: white;
 }

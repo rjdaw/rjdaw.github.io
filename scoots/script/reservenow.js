@@ -1,3 +1,3 @@
-document.getElementsByClassName("reserve-button").onclick = function () {
+function goToReserve () {
     location.href = "http://rjdaw.github.io/scoots/reservations.html";
-};
+}
