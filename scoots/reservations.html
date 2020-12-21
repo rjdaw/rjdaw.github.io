@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ruben Dawagne">
+    <meta name="description" content="WDD 230 - This page is the reservation page of Scoots.">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Ranchers&family=Rancho&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/scoots-favicon.ico">
+    <title>Scoots - Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div id="weather-alert"></div>
+        <a href="../scoots/index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
+        <h1>Scoots</h1>
+        <p>The Island of the Swallows on Wheels</p>
+    </header>
+
+    <nav>
+        <button id="menu-button" onclick="toggleMenu()">&#9776;
+        </button>
+        <ul id="responsive-nav" class="hide">
+            <li><a href="../scoots/index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home-es.html">Español <img src="images/mexican-flag.png" alt="Mexican Flag"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>San Miguel de Cozumel</h2>
+        <form method="get" action="confirm.html">
+            <section>
+                <h2>Personal Information</h2>
+                <label for="fullname">Full name</label><br>
+                <input type="text" id="fullname" name="fullname" pattern="[a-zA-Z ]" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="johndoe@coolmail.com" required><br><br>
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="country">Country</label> <br>
+                <input id="country" name="country"><br><br>
+                <label for="state">State</label> <br>
+                <input id="state" name="state"><br><br>
+            </section>
+            <section>
+                <h2>Rental Information</h2>
+                <label for="rentdate">Rental date</label><br>
+                <input type="date" id="rentdate" name="rentdate"><br><br>
+                <p>Rental length</p>
+                <input type="radio" id="half" name="length" value="half">
+                <label for="half">Half Day (3 hrs)</label><br>
+                <input type="radio" id="full" name="length" value="full">
+                <label for="full">Full Day</label><br>
+                <label for="vehicle">Vehicle:</label>
+                <select name="vehicle" id="vehicle">
+                    <option selected disabled>Select Vehicle...</option>
+                    <optgroup label="Scooters">
+                        <option value="hondametro">~Honda Metro Scooter</option>
+                        <option value="hondadio">~Honda Dio Scooter</option>
+                        <option value="hondapcx">~Honda PCX150 Scooter</option>
+                    </optgroup>
+                    <optgroup label="ATV">
+                        <option value="pioneeratv">Honda Pioneer ATV</option>
+                    </optgroup>
+                    <optgroup label="Jeep">
+                        <option value="jeep4door">Jeep Wrangler - 4 door</option>
+                        <option value="jeep2door">Jeep Wrangler - 2 door</option>
+                    </optgroup>
+
+                </select><br><br>
+
+                </datalist><br><br>
+                <label for="rating" class="slidecontainer">Storm severity:</label>
+                <input type="range" min="1" max="10" value="5" class="slider" id="rating" name="rating" step="1"
+                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist><br><br>
+
+            </section>
+
+            <section id="comment-box">
+                <label for="comments">Additional information or comments</label><br><br>
+
+                <textarea id="comments" name="comments">
+This website is awesome and ...
+</textarea><br><br>
+            </section>
+
+
+            <input id="submit-button" type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p id="address">Calle Aventura, 123<br>
+                Colonia Centro<br>
+                Cozumel, Quitna Roo<br>
+                77000 Mexico</p>
+            <p>~Scoots</p>
+            <p>&#9743; 477.555.9999<br>
+                &#9993; scoots-rentals@tol.com
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+        <div class="copyright">
+            <section>&copy; <span id="currentyear"></span> | ~Scoots | Ruben Dawagne</section>
+            <section id="currentdate">
+                <script src="script/currentyear.js"></script>
+                <script src="script/togglemenu.js"></script>
+                <script src="script/getprices.js"></script>
+                <script src="script/reservenow.js"></script>
+                <p>Last Updated:</p> <span id="currentdate"></span>
+                <script src="script/lastupdate.js"></script>
+            </section>
+            <section>Thanks <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for the the weather
+                information!</section>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="script/webfontload.js"></script>
+</body>
+
+</html>
