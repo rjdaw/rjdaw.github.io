@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ruben Dawagne">
+    <meta name="description" content="WDD 230 - This page is the reservation page of Scoots.">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/small.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&family=Ranchers&family=Rancho&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/scoots-favicon.ico">
+    <title>Scoots - Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div id="weather-alert"></div>
+        <a href="../scoots/index.html"><img src="images/scoots-logo.png" alt="Scoots Logo"></a>
+        <h1>Scoots</h1>
+        <p>The Island of the Swallows on Wheels</p>
+    </header>
+
+    <nav>
+        <button id="menu-button" onclick="toggleMenu()">&#9776;
+        </button>
+        <ul id="responsive-nav" class="hide">
+            <li><a href="../scoots/index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home-es.html">Español <img src="images/mexican-flag.png" alt="Mexican Flag"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>San Miguel de Cozumel</h2>
+        <section class="tours">
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/food.jpg" alt="Taquitos">
+                <figcaption>Cozumel Food Tour</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/jade.png" alt="Jade Cavern">
+                <figcaption>ATV Adventure to Jade Cavern</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/atlantis.jpg" alt="Submarine">
+                <figcaption>Atlantis Submarine Expedition</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/passion.jpg" alt="Passion Island">
+                <figcaption>Passion Island by Jeep</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/tulum.jpg" alt="Tulum">
+                <figcaption>Tulum Mayan Ruins Express</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/palancar.jpg" alt="Snorkeling">
+                <figcaption>Palancar Snorkeling Tour</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/chankanaab.jpg" alt="Chankanaab">
+                <figcaption>Chankanaab Park</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/playa-uvas.jpg" alt="Playa Uvas">
+                <figcaption>Playa Uvas Excursion</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/dune-buggy.jpg" alt="Dune Buggy">
+                <figcaption>Dune Buggy Tour</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p id="address">Calle Aventura, 123<br>
+                Colonia Centro<br>
+                Cozumel, Quitna Roo<br>
+                77000 Mexico</p>
+            <p>~Scoots</p>
+            <p>&#9743; 477.555.9999<br>
+                &#9993; scoots-rentals@tol.com
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank">
+                <img src="images/pinterest.png" alt="pinterest icon" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+        </div>
+        <div class="copyright">
+            <section>&copy; <span id="currentyear"></span> | ~Scoots | Ruben Dawagne</section>
+            <section id="currentdate">
+                <script src="script/currentyear.js"></script>
+                <script src="script/togglemenu.js"></script>
+                <script src="script/lazyload.js"></script>
+                <p>Last Updated:</p> <span id="currentdate"></span>
+                <script src="script/lastupdate.js"></script>
+            </section>
+            <section>Thanks <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> for the the weather
+                information!</section>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="script/webfontload.js"></script>
+</body>
+
+</html>
